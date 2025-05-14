@@ -1,0 +1,119 @@
+/* Custom styles for the Trade Simulator */
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.status-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.status-indicator.connected {
+    background-color: #28a745;
+    box-shadow: 0 0 8px #28a745;
+}
+
+.status-indicator.disconnected {
+    background-color: #dc3545;
+    box-shadow: 0 0 8px #dc3545;
+}
+
+.status-indicator.active {
+    background-color: #28a745;
+    box-shadow: 0 0 8px #28a745;
+}
+
+.status-indicator.inactive {
+    background-color: #ffc107;
+    box-shadow: 0 0 8px #ffc107;
+}
+
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.card-header {
+    font-weight: 600;
+}
+
+#orderbook-timestamp, #results-timestamp {
+    font-size: 0.8rem;
+}
+
+.display-4 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+/* Adding some spacing and styles for the parameter form */
+#param-form .form-label {
+    font-weight: 500;
+}
+
+#param-form .form-control,
+#param-form .form-select {
+    border-radius: 0.25rem;
+    padding: 0.5rem 0.75rem;
+}
+
+#param-form .btn-primary {
+    padding: 0.6rem 1rem;
+    font-weight: 500;
+    border-radius: 0.25rem;
+}
+
+/* Override progress bar styles */
+.progress {
+    background-color: transparent;
+    border-radius: 0.25rem;
+    overflow: visible;
+}
+
+.progress-bar {
+    padding: 0.25rem 0.5rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 0.6s ease;
+}
+
+/* Numbers styling */
+#best-ask {
+    font-weight: 600;
+}
+
+#best-bid {
+    font-weight: 600;
+}
+
+#mid-price, #spread, #internal-latency {
+    font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .display-4 {
+        font-size: 1.8rem;
+    }
+    
+    .card-header h4, .card-header h5 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Animation for data updates */
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.update-pulse {
+    animation: pulse 0.5s;
+}
