@@ -98,8 +98,8 @@ trade_simulator/
 
 ## Documentation
 
-- [Full Documentation](DOCUMENTATION.md)
-- [Performance Analysis](PERFORMANCE_ANALYSIS.md)
+- [Full Documentation](Documentation.md)
+- [Performance Analysis](Performance_Analysis.md)
 
 ## Testing
 
