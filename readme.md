@@ -112,7 +112,3 @@ python -m unittest discover
 
 For questions or support, please email:
 - pranavkrishna317@gmail.com
-
-## Confidentiality Notice
-
-The contents of this project are strictly confidential and intended solely for the  recruitment process. Do not share or post publicly.
